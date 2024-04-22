@@ -16,8 +16,8 @@ export default function Footer() {
                     <h3 className='fw-bolder pb-2'>For better experience,download the Swiggy app now</h3>
                 </div>
                 <div className='col-lg-6 ps-5'>
-                    <img src={playStore} className='play-store'/>
-                    <img src={appStore} className='play-store ps-3'/>
+                    <img src={playStore} className='play-store' alt='play'/>
+                    <img src={appStore} className='play-store ps-3' alt='app'/>
                 </div>
             </div>
         </div>

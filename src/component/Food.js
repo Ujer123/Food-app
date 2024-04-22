@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import {
-    Card, CardContent, CardMedia, Typography, Grid,
+    Card, CardContent, CardMedia, Typography,
     Button, Menu, MenuItem, FormControlLabel, Radio, RadioGroup, Stack
   } from '@mui/material';
 import {faStar, faChevronDown } from '@fortawesome/free-solid-svg-icons';
