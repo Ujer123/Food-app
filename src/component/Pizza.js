@@ -14,7 +14,7 @@ import React, { useState, useEffect } from 'react';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-export default function Pizza({}) {
+export default function Pizza() {
     const [pizza, setPizza] = useState([]);
 
     const fallbackImage = 'https://www.google.com/imgres?q=no%20img&imgurl=https%3A%2F%2Fst3.depositphotos.com%2F23594922%2F31822%2Fv%2F450%2Fdepositphotos_318221368-stock-illustration-missing-picture-page-for-website.jpg&imgrefurl=https%3A%2F%2Fdepositphotos.com%2Fvectors%2Fno-image-available.html&docid=CPLUlL4hIDNDdM&tbnid=v3iZKbCfoqg1ZM&vet=12ahUKEwj409rTgdaFAxXPslYBHUdVBPIQM3oECBgQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwj409rTgdaFAxXPslYBHUdVBPIQM3oECBgQAA';

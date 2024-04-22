@@ -14,7 +14,7 @@ import React, { useState, useEffect } from 'react';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-export default function Burger({}) {
+export default function Burger() {
     const [burger, setBurger] = useState([]);
 
 
