@@ -1,0 +1,46 @@
+.head-tit{
+  background-color: white !important;
+  color: blue !important;
+}
+
+.caro-but{
+  display: flex;
+  justify-content: end;
+  
+}
+
+.crd-cont{
+  margin-top: -10px;
+}
+
+/* .crd-prc{
+  
+} */
+
+.star-icn{
+  background-color: rgb(6, 188, 6);
+  color: white;
+  font-size: 9px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px){
+  .carou-wid{
+    width: 590px !important;
+   }
+}
+
+@media only screen and (max-width: 600px){
+ .carou-wid{
+  width: 200px !important;
+ }
+
+ .caro-but{
+  padding-right: 30px !important;
+ }
+ .carou-hed{
+  padding-left: 0 !important;
+ }
+}
