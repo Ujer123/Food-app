@@ -13,6 +13,35 @@
   margin-top: -10px;
 }
 
+.foot-all li{
+  padding-top: 10px;
+  
+}
+
+.play-store{
+  width: 200px;
+}
+
+
+
+.play-app{
+  background-color: rgb(198, 189, 189);
+}
+
+
+.foot-all{
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  /* text-align: center; */
+}
+
+.list-company{
+  list-style: none;
+}
+
 /* .crd-prc{
   
 } */

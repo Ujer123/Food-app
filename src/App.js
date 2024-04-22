@@ -11,6 +11,7 @@ import North from './component/North';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 function App() {
   return (
    <>
@@ -41,6 +42,7 @@ function App() {
           <North/>
       </Route>
   </Switch>
+  
 </Router> 
    </>
   );

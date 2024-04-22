@@ -6,6 +6,10 @@ import Button from '@mui/joy/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightLong, faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+// import Noodel from '../component/Noodel';
+import Food from '../component/Food';
+import Near from '../component/Near';
+import Footer from '../component/Footer';
 
 export default function Home() {
     const boxRef = useRef();
@@ -160,6 +164,14 @@ export default function Home() {
                 </Card>
 
             </Box>
+
+            <Food/>
+
+            {/* <Noodel/> */}
+
+            <Near/>
+            <Footer/>
+            
         </>
     );
 }
