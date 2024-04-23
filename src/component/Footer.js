@@ -34,7 +34,7 @@ export default function Footer() {
       <h5 className='fw-bold'>Swiggy</h5>
       <p>&copy; Copyright All Rights Reserved</p>
 </div>
-<div className='col-lg-3 list-company'>
+<div className='col-lg-3 list-company col-6'>
 
       <h5 className='fw-bold'>Company</h5>
       <li>About</li>
@@ -45,14 +45,14 @@ export default function Footer() {
       <li>Swiggy Genie</li>
 </div>
 
-<div className='col-lg-3 list-company'>
+<div className='col-lg-3 list-company col-6'>
 
       <h5 className='fw-bold'>Contact us</h5>
       <li>Help & Support</li>
       <li>Partner with us</li>
       <li>Ride with us</li>
       
-      <h5 className='fw-bold pt-5'>Legal</h5>
+      <h5 className='fw-bold pt-5 '>Legal</h5>
       <li>Term & Conditions</li>
       <li>Cookie Policy</li>
       <li>Privacy Policy</li>

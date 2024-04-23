@@ -76,4 +76,13 @@
  .crd-fod{
   margin-left: 15px;
  }
+
+ .leg-lig{
+  padding-top: 40px !important;
+ }
+
+ .play-store{
+  padding-left: 0 !important;
+  width: 50% !important;
+ }
 }

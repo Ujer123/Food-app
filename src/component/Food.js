@@ -15,6 +15,8 @@ export default function Food() {
   const [desserts, setDesserts] = useState([]);
   const [drinks, setDrinks] = useState([]);
   const [sandwiches, setSandwiches] = useState([]);
+  const [selectedOption, setSelectedOption] = useState('Sort By');
+  const [anchorEl, setAnchorEl] = useState(null);
 
   
   const fetchData = async () => {
@@ -56,8 +58,6 @@ export default function Food() {
   }, []);
 
 
-  const [selectedOption, setSelectedOption] = useState('Sort By');
-  const [anchorEl, setAnchorEl] = useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -66,12 +66,63 @@ export default function Food() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const sortHighToLow = (items, setItems) => {
+    const sortedItems = [...items].sort((a, b) => b.price - a.price);
+    setItems(sortedItems);
+};
 
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+const sortLowToHigh = (items, setItems) => {
+    const sortedItems = [...items].sort((a, b) => a.price - b.price);
+    setItems(sortedItems);
+};
+
+const sortByNameAZ = (items, setItems) => {
+    const sortedItems = [...items].sort((a, b) => a.name.localeCompare(b.name));
+    setItems(sortedItems);
+};
+
+const sortByNameZA = (items, setItems) => {
+    const sortedItems = [...items].sort((a, b) => b.name.localeCompare(a.name));
+    setItems(sortedItems);
+};
+
+// Handle option change for sorting
+const handleOptionChange = (event) => {
+    const option = event.target.value;
+    setSelectedOption(option);
+
+    if (option === "Cost: High to Low") {
+        sortHighToLow(pizzas, setPizzas);
+        sortHighToLow(burgers, setBurgers);
+        sortHighToLow(bbqs, setBBQs);
+        sortHighToLow(desserts, setDesserts);
+        sortHighToLow(drinks, setDrinks);
+        sortHighToLow(sandwiches, setSandwiches);
+    } else if (option === "Cost: Low to High") {
+        sortLowToHigh(pizzas, setPizzas);
+        sortLowToHigh(burgers, setBurgers);
+        sortLowToHigh(bbqs, setBBQs);
+        sortLowToHigh(desserts, setDesserts);
+        sortLowToHigh(drinks, setDrinks);
+        sortLowToHigh(sandwiches, setSandwiches);
+    } else if (option === "Ascending") {
+        sortByNameAZ(pizzas, setPizzas);
+        sortByNameAZ(burgers, setBurgers);
+        sortByNameAZ(bbqs, setBBQs);
+        sortByNameAZ(desserts, setDesserts);
+        sortByNameAZ(drinks, setDrinks);
+        sortByNameAZ(sandwiches, setSandwiches);
+    } else if (option === "Descending") {
+        sortByNameZA(pizzas, setPizzas);
+        sortByNameZA(burgers, setBurgers);
+        sortByNameZA(bbqs, setBBQs);
+        sortByNameZA(desserts, setDesserts);
+        sortByNameZA(drinks, setDrinks);
+        sortByNameZA(sandwiches, setSandwiches);
+    }
+
     handleClose();
-  };
-
+};
 
 
 const renderFoodCards = (items) => (
