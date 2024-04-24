@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import Food from '../component/Food';
 import Near from '../component/Near';
 import Footer from '../component/Footer';
+import banner from '../assest/dweb_header.avif';
 
 export default function Home() {
     const boxRef = useRef();
@@ -30,6 +31,26 @@ export default function Home() {
 
     return (
         <>
+        <section className='bann_con'>
+
+        <div className='container mt-5 ps-5'>
+            <div className='row ps-5'>
+                <div className='col-lg-6 ps-5 pt-4 ban-txt'>
+                <h2 className='fw-bolder fs-1'>Order Food
+                <br/>Online in
+                <br/>Mumbai</h2>
+                </div>
+                
+                <div className='col-lg-6'>
+
+            <img src={banner} className='w-75'/>
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px', paddingRight: '190px', marginTop: '15px' }} className='caro-but'>
                 <h3 style={{ margin: 0, paddingLeft: '100px' }} className='carou-hed fw-bold'>What's on your mind?</h3>
                 <div style={{ display: 'flex', alignItems: 'center' }}>

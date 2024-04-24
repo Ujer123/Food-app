@@ -32,7 +32,7 @@ export default function Footer() {
 <div className='col-lg-3'>
 
       <h5 className='fw-bold'>Swiggy</h5>
-      <p>&copy; Copyright All Rights Reserved</p>
+      <p>&copy; Copyright All Rights Reserved By Ujer</p>
 </div>
 <div className='col-lg-3 list-company col-6'>
 

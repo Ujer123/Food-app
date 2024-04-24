@@ -146,7 +146,7 @@ export default function Burger() {
     <h4 className='fw-bold mb-3 pt-4'>Restaurants to explore</h4>
 
             {burger.map((item, index) => (
-                <div className='col-lg-3'>
+                <div className='col-lg-3 col-6'>
 
                 <Card sx={{ maxWidth: 345, backgroundColor: 'white', color: 'black', boxShadow: 'none' }} key={index} className='crd-fod'>
                     <CardMedia
