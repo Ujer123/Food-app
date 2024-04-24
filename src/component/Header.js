@@ -9,7 +9,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import NearMeIcon from '@mui/icons-material/NearMe';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 
 const Search = styled('div')(({ theme }) => ({
