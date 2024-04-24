@@ -43,7 +43,7 @@ export default function Home() {
                 
                 <div className='col-lg-6'>
 
-            <img src={banner} className='w-75'/>
+            <img src={banner} className='w-75' alt='banner'/>
                 </div>
             </div>
         </div>
